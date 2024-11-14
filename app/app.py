@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def index():
-    return "Debe enviar un HTTP request 'CURL -X GET http://localhost:8080/mi_endpoint?ABC=123' para que le retorne XYZ"
+    return "Debe enviar un HTTP request 'curl -X GET http://localhost:8000/mi_endpoint?ABC=123' para que le retorne XYZ"
 
 @app.route('/mi_endpoint', methods=['GET'])
 def mi_endpoint():
